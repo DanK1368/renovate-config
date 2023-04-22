@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "assignees": ["DanK1368"],
+  "prHeader": "DanielTestHeader",
+  "labels": ["dependencies-testlabel"],
+  "commitMessagePrefix": "chore(deps):",
+  "commitMessageAction": "update",
+  "commitMessageExtra": "{{depName}} to {{newVersion}}",
+  "commitMessageSuffix": "[ci skip]",
+  "rebaseWhen": "behind-base-branch"
+}
