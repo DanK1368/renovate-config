@@ -3,6 +3,12 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ],
   "assignees": ["DanK1368"],
   "prHeader": "DanielTestHeader",
   "labels": ["dependencies-testlabel"],
@@ -10,5 +16,8 @@
   "commitMessageAction": "update",
   "commitMessageExtra": "{{depName}} to {{newVersion}}",
   "commitMessageSuffix": "[ci skip]",
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "prHourlyLimit": 0,
+  "rebaseStalePrs": true
 }
+
