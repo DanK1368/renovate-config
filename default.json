@@ -18,5 +18,6 @@
   "dependencyDashboard": false,
   "pre-commit": {
     "enabled": true
-  }
+  },
+  "reviewers": ["DanK1368"]
 }
